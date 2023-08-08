@@ -1,0 +1,8 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #14161E;
+
+    --color-accent: #2E0C66;
+
+    --color-accent-gradient: linear-gradient(159deg, #310081 0%, #200C40 92.12%);
+}

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+
+@import "./variables.css";
+
+html, body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    background: var(--color-black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 100px;
+
+    width: 100%;
+    max-width: 1920px;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+.title {
+    line-height: 1em;
+
+    color: var(--color-white);
+}
+
+h1.title {
+    font-weight: 900;
+    font-size: 120px;
+}
+
+h2.title {
+    font-weight: 900;
+    font-size: 96px;
+}
+
+h3.title {
+    font-weight: 800;
+    font-size: 64px;
+}
+
+h4.title {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+@media (max-width: 1519px) {
+    h1.title {
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 1199px) {
+    h1.title {
+        font-size: 72px;
+    }
+
+    h2.title {
+        font-size: 56px;
+    }
+
+    h3.title {
+        font-size: 36px;
+    }
+
+    h4.title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1.title {
+        font-size: 32px;
+    }
+
+    h2.title {
+        font-size: 24px;
+    }
+
+    h3.title {
+        font-size: 20px;
+    }
+
+    h4.title {
+        font-size: 16px;
+    }
+}
+
+.text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2em;
+
+    color: var(--color-white);
+}
+
+@media (max-width: 1199px) {
+    .text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .text {
+        font-size: 14px;
+    }
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    line-height: 1.2em;
+    text-transform: uppercase;
+
+    display: block;
+
+    border: 0;
+    border-radius: 15px;
+    color: var(--color-white);
+    background: var(--color-accent-gradient);
+
+    cursor: pointer;
+}
+
+.button.button_large {
+    padding: 48px 60px;
+
+    font-size: 32px;
+}
+
+.button.button_medium {
+    padding: 32px 52px;
+
+    font-size: 24px;
+}
+
+.button.button_small {
+    padding: 28px 45px;
+
+    font-size: 20px;
+}
+
+@media (max-width: 1199px) {
+    .button {
+        border-radius: 10px;
+    }
+
+    .button.button_large {
+        padding: 32px 48px;
+
+        font-size: 24px;
+    }
+
+    .button.button_medium {
+        padding: 32px 52px;
+
+        font-size: 20px;
+    }
+
+    .button.button_small {
+        padding: 15px 30px;
+
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .button.button_large {
+        padding: 24px 36px;
+
+        font-size: 14px;
+    }
+
+    .button.button_medium {
+        padding: 14px 20px;
+
+        font-size: 12px;
+    }
+
+    .button.button_small {
+        padding: 14px 20px;
+
+        font-size: 12px;
+    }
+}
