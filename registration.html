@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./css/auth.css">
+    <title>Регистрация - Mario Cash</title>
+</head>
+<body>
+<div class="modal modal-alert">
+    <div class="modal__inner">
+        <h3 class="title alert__title">Запишите свои данные!</h3>
+        <div class="alert__table">
+            <div class="alert__row">
+                <p class="text alert__name">Логин:</p>
+                <p class="text alert__value">login</p>
+            </div>
+            <div class="alert__row">
+                <p class="text alert__name">Пароль:</p>
+                <p class="text alert__value">parol</p>
+            </div>
+            <div class="alert__row">
+                <p class="text alert__name">Email:</p>
+                <p class="text alert__value">mail@m.m</p>
+            </div>
+        </div>
+        <div class="alert__buttons">
+            <button class="button button_large">начать играть</button>
+            <button class="button button_large">скачать</button>
+        </div>
+    </div>
+</div>
+
+<section class="auth">
+    <div class="container auth__container">
+        <div class="auth__inner">
+            <h2 class="title auth__title">Регистрация</h2>
+            <form class="auth__form">
+                <label>
+                    <input class="field auth__field" type="text" name="login" placeholder="Логин">
+                </label>
+                <label>
+                    <input class="field auth__field" type="email" name="email" placeholder="Почта">
+                </label>
+                <label>
+                    <input class="field auth__field" type="password" name="password" placeholder="Пароль">
+                </label>
+                <div>
+                    <label class="auth__faq">
+                        <input class="auth-faq__input" type="checkbox" name="faq">
+                        <span class="text auth-faq__text">
+                        Я прочитал и принимаю
+                        <a href="#">Политику конфиденциальности</a> и
+                        <a href="#">Правила использования</a>
+                    </span>
+                    </label>
+                </div>
+                <button class="button button_large auth__button">Зарегистрироваться</button>
+            </form>
+            <p class="text auth__text">
+                <span>Уже есть аккаунт?</span>
+                <a class="auth-text__link" href="#">Войдите</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/just-validate@4.2.0/dist/just-validate.production.min.js"></script>
+<script src="./js/modal.js"></script>
+<script src="./js/registration.js"></script>
+
+</body>
+</html>

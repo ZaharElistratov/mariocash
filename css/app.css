@@ -36,13 +36,6 @@
     filter: blur(250px);
 }
 
-.header-logo__icon {
-    display: block;
-
-    width: 246px;
-    height: 36px;
-}
-
 .header__title {
     margin-top: 50px;
 
@@ -93,11 +86,6 @@
         backdrop-filter: blur(10px);
     }
 
-    .header-logo__icon {
-        width: 170px;
-        height: 28px;
-    }
-
     .header__title {
         margin-top: 50px;
     }
@@ -120,11 +108,6 @@
         padding: 30px 0 0;
 
         border-radius: 0 100px 0 0;
-    }
-
-    .header-logo__icon {
-        width: 110px;
-        height: 16px;
     }
 
     .header__title {
@@ -292,21 +275,29 @@ tbody .table__col {
     text-align: center;
 }
 
-.video__video {
-    margin: 100px auto 0;
+.video__wrapper {
+    margin-top: 100px;
 
+    display: flex;
+    justify-content: center;
+}
+
+.video__video {
     width: 100%;
     max-width: 1400px;
     height: 800px;
 
+    border: 0;
     border-radius: 25px;
     background: #B3B3B3;
 }
 
 @media (max-width: 1519px) {
-    .video__video {
-        margin: 50px auto 0;
+    .video__wrapper {
+        margin-top: 50px;
+    }
 
+    .video__video {
         max-width: 1080px;
         height: 620px;
     }
@@ -323,6 +314,7 @@ tbody .table__col {
 
     .video__video {
         height: 400px;
+        max-width: 720px;
 
         border-radius: 15px;
     }
@@ -333,9 +325,11 @@ tbody .table__col {
         margin-top: 100px;
     }
 
-    .video__video {
-        margin: 20px auto 0;
+    .video__wrapper {
+        margin-top: 20px;
+    }
 
+    .video__video {
         max-width: 400px;
 
         height: 200px;
@@ -376,8 +370,15 @@ tbody .table__col {
 .feedback__list {
     margin-top: 100px;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 50px;
+}
+
+.feedback__col {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
     gap: 50px;
 }
 
@@ -392,6 +393,8 @@ tbody .table__col {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    cursor: pointer;
 }
 
 .dropdown__title {
@@ -405,6 +408,12 @@ tbody .table__col {
 
 .dropdown__body {
     margin-top: 50px;
+
+    display: none;
+}
+
+.dropdown.dropdown_active .dropdown__body {
+    display: block;
 }
 
 .dropdown__text {
@@ -413,7 +422,11 @@ tbody .table__col {
 
 @media (max-width: 1519px) {
     .feedback__list {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feedback__col {
         gap: 20px;
     }
 }
@@ -478,6 +491,10 @@ tbody .table__col {
         gap: 10px;
     }
 
+    .feedback__col {
+        gap: 10px;
+    }
+
     .dropdown {
         padding: 20px;
     }
@@ -535,12 +552,15 @@ tbody .table__col {
 /* CONTACTS */
 .contacts {
     margin: 200px 0 100px;
+
+    text-align: center;
 }
 
 .contacts__link {
-    display: flex;
+    text-align: left;
+    
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
     gap: 50px;
 
     position: relative;

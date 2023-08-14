@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./css/auth.css">
+    <title>Авторизация - Mario Cash</title>
+</head>
+<body>
+<section class="auth">
+    <div class="container auth__container">
+        <div class="auth__inner">
+            <h2 class=" title auth__title">Войти</h2>
+            <form class="auth__form">
+                <label>
+                    <input class="field auth__field" type="text" name="login" placeholder="Логин">
+                </label>
+                <label>
+                    <input class="field auth__field" type="password" name="password" placeholder="Пароль">
+                </label>
+                <button class="button button_large auth__button">Войти в аккаунт</button>
+            </form>
+            <p class="text auth__text">
+                <span>Нет аккаунта?</span>
+                <a class="auth-text__link" href="#">Создайте.</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/just-validate@4.2.0/dist/just-validate.production.min.js"></script>
+<script src="./js/login.js"></script>
+
+</body>
+</html>

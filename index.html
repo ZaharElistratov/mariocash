@@ -10,8 +10,8 @@
 <header class="header">
 	<div class="header__inner">
 		<div class="container">
-			<a class="header__logo" href="#">
-				<svg class="header-logo__icon">
+			<a class="logo" href="#">
+				<svg class="logo__icon">
 					<use href="./img/icons.svg#logo"/>
 				</svg>
 			</a>
@@ -85,7 +85,15 @@
 <section class="video">
 	<div class="container">
 		<h2 class="title video__title">Как это работает?</h2>
-		<div class="video__video"></div>
+		<div class="video__wrapper">
+			<iframe
+					class="video__video"
+					src="https://www.youtube.com/embed/6bEhqAaJF-U"
+					title="YouTube video player"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+			></iframe>
+		</div>
 	</div>
 </section>
 
@@ -93,33 +101,21 @@
 	<div class="container">
 		<h2 class="title feedback__title">Часто задаваемые вопросы</h2>
 		<div class="feedback__list">
-			<div class="dropdown">
-				<div class="dropdown__head">
-					<h4 class="title dropdown__title">Как это работает?</h4>
-					<svg class="dropdown__icon">
-						<use href="./img/icons.svg#arrow-bottom"/>
-					</svg>
+			<div class="feedback__col">
+				<div class="dropdown">
+					<div class="dropdown__head">
+						<h4 class="title dropdown__title">Как это работает?</h4>
+						<svg class="dropdown__icon">
+							<use href="./img/icons.svg#arrow-bottom"/>
+						</svg>
+					</div>
+					<div class="dropdown__body">
+						<p class="text dropdown__text">
+							Играйте в культовую игру Марио, собирайте монеты и обменивайте их на реальные деньги.
+						</p>
+					</div>
 				</div>
-				<div class="dropdown__body">
-					<p class="text dropdown__text">
-						Играйте в культовую игру Марио, собирайте монеты и обменивайте их на реальные деньги.
-					</p>
-				</div>
-			</div>
-			<div class="dropdown">
-				<div class="dropdown__head">
-					<h4 class="title dropdown__title">Долго идёт вывод денег?</h4>
-					<svg class="dropdown__icon">
-						<use href="./img/icons.svg#arrow-bottom"/>
-					</svg>
-				</div>
-				<div class="dropdown__body">
-					<p class="text dropdown__text">
-						Играйте в культовую игру Марио, собирайте монеты и обменивайте их на реальные деньги.
-					</p>
-				</div>
-			</div>
-			<div class="dropdown">
+				<div class="dropdown">
 				<div class="dropdown__head">
 					<h4 class="title dropdown__title">Криптовалюта есть?</h4>
 					<svg class="dropdown__icon">
@@ -132,17 +128,33 @@
 					</p>
 				</div>
 			</div>
-			<div class="dropdown">
-				<div class="dropdown__head">
-					<h4 class="title dropdown__title">Есть реф. система?</h4>
-					<svg class="dropdown__icon">
-						<use href="./img/icons.svg#arrow-bottom"/>
-					</svg>
+			</div>
+			<div class="feedback__col">
+				<div class="dropdown">
+					<div class="dropdown__head">
+						<h4 class="title dropdown__title">Долго идёт вывод денег?</h4>
+						<svg class="dropdown__icon">
+							<use href="./img/icons.svg#arrow-bottom"/>
+						</svg>
+					</div>
+					<div class="dropdown__body">
+						<p class="text dropdown__text">
+							Играйте в культовую игру Марио, собирайте монеты и обменивайте их на реальные деньги.
+						</p>
+					</div>
 				</div>
-				<div class="dropdown__body">
-					<p class="text dropdown__text">
-						Играйте в культовую игру Марио, собирайте монеты и обменивайте их на реальные деньги.
-					</p>
+				<div class="dropdown">
+					<div class="dropdown__head">
+						<h4 class="title dropdown__title">Есть реф. система?</h4>
+						<svg class="dropdown__icon">
+							<use href="./img/icons.svg#arrow-bottom"/>
+						</svg>
+					</div>
+					<div class="dropdown__body">
+						<p class="text dropdown__text">
+							Играйте в культовую игру Марио, собирайте монеты и обменивайте их на реальные деньги.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -166,5 +178,7 @@
 		</a>
 	</div>
 </section>
+
+<script src="./js/app.js"></script>
 </body>
 </html>

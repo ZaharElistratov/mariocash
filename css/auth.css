@@ -1,0 +1,179 @@
+@import "./global.css";
+
+/* ALERT */
+.alert__title {
+    text-align: center;
+}
+
+.alert__table {
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert__row {
+    display: flex;
+    gap: 10px;
+}
+
+.alert__value {
+    font-weight: 700;
+}
+
+.alert__buttons {
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 767px) {
+    h3.alert__title {
+        font-size: 32px;
+    }
+
+    .alert__name {
+        font-size: 16px;
+    }
+
+    .alert__value {
+        font-size: 16px;
+    }
+}
+
+/* AUTH */
+.auth {
+    min-height: 100vh;
+    height: auto;
+}
+
+.auth__container {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth__inner {
+    padding: 100px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.auth__title {
+    text-align: center;
+}
+
+.auth__form {
+    margin-top: 45px;
+
+    width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth__field {
+    padding: 50px;
+
+    width: 100%;
+}
+
+.auth__error {
+    margin-top: 10px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+
+    color: #EF323B;
+}
+
+.auth__faq {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-faq__input {
+    margin: 0;
+
+    width: 22px;
+    height: 22px;
+}
+
+.auth-faq__text {
+    max-width: 620px;
+
+    font-size: 20px;
+}
+
+.auth-faq__text a {
+    font-weight: 700;
+}
+
+.auth__text {
+    margin-top: 30px;
+
+    font-size: 20px;
+
+    text-align: center;
+}
+
+.auth-text__link {
+    font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+    .auth__form {
+        margin-top: 30px;
+
+        max-width: 600px;
+    }
+
+    .auth__field {
+        padding: 42px;
+    }
+}
+
+@media (max-width: 767px) {
+    .auth__form {
+        margin-top: 20px;
+
+        width: 100%;
+        max-width: 400px;
+
+        gap: 10px;
+    }
+
+    .auth__form label {
+        width: 100%;
+    }
+
+    .auth__field {
+        padding: 32px 24px;
+
+        font-size: 18px;
+    }
+
+    .auth__error {
+        margin-top: 5px;
+
+        font-size: 16px;
+    }
+
+    .auth-faq__text {
+        font-size: 16px;
+    }
+
+    .auth__text {
+        margin-top: 20px;
+
+        font-size: 18px;
+    }
+}

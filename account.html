@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./css/account.css">
+    <title>Личный кабинет - Mario Cash</title>
+</head>
+<body>
+<div class="modal modal-alert">
+    <div class="modal__inner">
+        <div class="alert-icon__wrapper">
+            <svg class="alert__icon">
+                <use href="./img/icons.svg#error"/>
+            </svg>
+        </div>
+        <h3 class="title alert__title">Произошла ошибка!</h3>
+        <p class="text alert__text">Попробуйте позже</p>
+    </div>
+</div>
+
+<!-- Обмен -->
+<div class="modal modal-exchange">
+    <div class="modal__inner">
+        <p class="text transactions__title">Обмен монет на рубли</p>
+        <p class="text transactions__text">Стоимость одной монетки: 10₽</p>
+        <form class="transactions__form">
+            <label>
+                <input class="field transaction__field" type="number" name="quantity" placeholder="Количество">
+            </label>
+            <div class="transactions__buttons">
+                <button class="button button_medium transaction__button">Обменять</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Вывод -->
+<div class="modal modal-output">
+    <div class="modal__inner">
+        <p class="text transactions__title">
+            Введите колличество средств и способ вывода. Минимальная сумма вывода - 300₽
+        </p>
+        <form class="transactions__form">
+            <label>
+                <input class="field transaction__field" type="number" name="quantity" placeholder="Количество">
+            </label>
+            <label>
+                <input class="field transaction__field" type="text" name="wallet" placeholder="Кошелёк">
+            </label>
+            <div class="transactions__buttons">
+                <button class="button button_medium transaction__button">usdt</button>
+                <button class="button button_medium transaction__button">на карту</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Пополнение -->
+<div class="modal modal-recharge">
+    <div class="modal__inner">
+        <p class="text transactions__title">
+            Введите сумму, на которую хотите пополнить. Минимальная сумма пополнения - 300₽
+        </p>
+        <form class="transactions__form">
+            <label>
+                <input class="field transaction__field" type="number" name="quantity" placeholder="Количество">
+            </label>
+            <div class="transactions__buttons">
+                <button class="button button_medium transaction__button">freekassa</button>
+                <button class="button button_medium transaction__button">usdt</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<header class="header">
+    <div class="container">
+        <nav class="header__nav">
+            <div class="header__left">
+                <a class="logo" href="#">
+                    <svg class="logo__icon">
+                        <use href="./img/icons.svg#logo"/>
+                    </svg>
+                </a>
+                <a class="header__link" href="#">
+                    <svg class="header-link__icon">
+                        <use href="./img/icons.svg#telegram"/>
+                    </svg>
+                    <span class="header-link__text">наш telegram</span>
+                </a>
+            </div>
+            <div class="header__right">
+                <a class="button button_medium header__button_recharge" href="#">Пополнить</a>
+                <a class="header__button" href="#">Выйти</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="dashboard">
+    <div class="container">
+        <div class="dashboard__inner">
+            <img class="dashboard__img" src="./img/account/img.png" alt="">
+            <div class="dashboard__content">
+                <div class="dashboard__buttons">
+                    <button class="button button_large dashboard__button">играть и зарабатывать</button>
+                    <button class="button button_medium dashboard__button">играть в демо</button>
+                </div>
+                <div class="dashboard__wallet">
+                    <div class="dashboard__balance">
+                        <h4 class="title dashboard__money">₽ 245.3</h4>
+                        <h4 class="title dashboard__coins">
+                            <img src="./img/account/coin.png" alt="Coin"/>
+                            <span>15.3</span>
+                        </h4>
+                    </div>
+                    <div class="dashboard-wallet__buttons">
+                        <button class="button button_large dashboard__button dashboard__button_recharge">пополнить
+                            баланс
+                        </button>
+                        <button class="button button_small dashboard__button dashboard__button_output">вывести
+                        </button>
+                        <button class="button button_small dashboard__button dashboard__button_exchange">обмен</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta__inner">
+            <h3 class="title cta__title">Зарабатывай на инвестициях</h3>
+            <button class="button button_small cta__button">перейти в кабинет инвестора</button>
+        </div>
+    </div>
+</section>
+
+<section class="referral">
+    <div class="container">
+        <div class="referral__inner">
+            <div class="referral__content">
+                <h3 class="title referral__title">Реферальная ссылка</h3>
+                <div class="referral__text">
+                    <p class="referral__users">Игроков: 0</p>
+                    <p class="referral__money">Заработано: +0₽</p>
+                </div>
+            </div>
+            <a class="referral__link" href="#">https://mario-cash.com?rto=tst</a>
+        </div>
+    </div>
+</section>
+
+<section class="tabs">
+    <div class="container">
+        <div class="tabs__buttons">
+            <button class="tabs__button tabs__button_active" data-tab="#users">Топ игроков</button>
+            <button class="tabs__button" data-tab="#investors">Топ инвесторов</button>
+            <button class="tabs__button" data-tab="#output">Заявки на вывод</button>
+        </div>
+        <div class="tabs__wrapper">
+            <table class="tabs__table tabs__table_active" id="users">
+                <thead class="tabs-table__head">
+                <tr class="tabs-table__row">
+                    <th class="tabs-table__col">Имя</th>
+                    <th class="tabs-table__col">Игр</th>
+                    <th class="tabs-table__col">Собрал монет</th>
+                    <th class="tabs-table__col">Заработал рублей</th>
+                </tr>
+                </thead>
+                <tbody class="tabs-table__body">
+                <tr class="tabs-table__row">
+                    <td class="tabs-table__col">Igrok</td>
+                    <td class="tabs-table__col">24</td>
+                    <td class="tabs-table__col">213</td>
+                    <td class="tabs-table__col">573₽</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="tabs__table" id="investors">
+                <thead class="tabs-table__head">
+                <tr class="tabs-table__row">
+                    <th class="tabs-table__col">Имя</th>
+                    <th class="tabs-table__col">Игр</th>
+                    <th class="tabs-table__col">Собрал монет</th>
+                    <th class="tabs-table__col">Заработал рублей</th>
+                </tr>
+                </thead>
+                <tbody class="tabs-table__body">
+                <tr class="tabs-table__row">
+                    <td class="tabs-table__col">Igrok</td>
+                    <td class="tabs-table__col">24</td>
+                    <td class="tabs-table__col">213</td>
+                    <td class="tabs-table__col">573₽</td>
+                </tr>
+                <tr class="tabs-table__row">
+                    <td class="tabs-table__col">Igrok</td>
+                    <td class="tabs-table__col">24</td>
+                    <td class="tabs-table__col">213</td>
+                    <td class="tabs-table__col">573₽</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="tabs__table" id="output">
+                <thead class="tabs-table__head">
+                <tr class="tabs-table__row">
+                    <th class="tabs-table__col">Имя</th>
+                    <th class="tabs-table__col">Игр</th>
+                    <th class="tabs-table__col">Собрал монет</th>
+                    <th class="tabs-table__col">Заработал рублей</th>
+                </tr>
+                </thead>
+                <tbody class="tabs-table__body">
+                <tr class="tabs-table__row">
+                    <td class="tabs-table__col">Igrok</td>
+                    <td class="tabs-table__col">24</td>
+                    <td class="tabs-table__col">213</td>
+                    <td class="tabs-table__col">573₽</td>
+                </tr>
+                <tr class="tabs-table__row">
+                    <td class="tabs-table__col">Igrok</td>
+                    <td class="tabs-table__col">24</td>
+                    <td class="tabs-table__col">213</td>
+                    <td class="tabs-table__col">573₽</td>
+                </tr>
+                <tr class="tabs-table__row">
+                    <td class="tabs-table__col">Igrok</td>
+                    <td class="tabs-table__col">24</td>
+                    <td class="tabs-table__col">213</td>
+                    <td class="tabs-table__col">573₽</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="contacts">
+    <div class="container">
+        <a class="contacts__link" href="#">
+            <svg class="contacts__icon">
+                <use href="./img/icons.svg#telegram"/>
+            </svg>
+            <h2 class="title contacts__title">Заходи в <span>Telegram</span></h2>
+        </a>
+    </div>
+</section>
+
+<script src="./js/modal.js"></script>
+<script src="./js/account.js"></script>
+</body>
+</html>
