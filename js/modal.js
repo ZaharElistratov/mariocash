@@ -10,6 +10,7 @@ const modalInitialization = (modalClass, modalOpenButtonClass) => {
     const modal = document.querySelector(modalClass)
     const modalInner = modal.querySelector('.modal__inner')
     const modalOpenButtons = document.querySelectorAll(modalOpenButtonClass)
+    const modalCloseButton = modal.querySelector('.modal__close')
 
     modalOpenButtons.forEach((modalOpenButton) => {
         modalOpenButton.addEventListener('click', () => {
@@ -22,4 +23,8 @@ const modalInitialization = (modalClass, modalOpenButtonClass) => {
             modalClose(modal)
         }
     })
+
+    modalCloseButton.addEventListener('click', () => {
+        modalClose(modal)
+    });
 }

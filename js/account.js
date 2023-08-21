@@ -1,3 +1,23 @@
+const link = document.querySelector(".referral__link");
+const text = document.querySelector(".referral-link__input");
+
+link.addEventListener('click', () => {
+    navigator.clipboard.writeText(text.value)
+        .then(() => {
+            const modal = document.querySelector('.modal-alert')
+            const modalInner = modal.querySelector('.modal__inner')
+
+            modalOpen(modal)
+
+            modal.addEventListener('mousedown', (event) => {
+                if (! modalInner.contains(event.target)) {
+                    modalClose(modal)
+                }
+            })
+        })
+        .catch()
+})
+
 const tabButtons = document.querySelectorAll('.tabs__button')
 const tabs = document.querySelectorAll('.tabs__table')
 
@@ -22,6 +42,7 @@ tabButtons.forEach(item => {
     })
 })
 
+modalInitialization('.modal-invest', '.referral__text')
 modalInitialization('.modal-exchange', '.dashboard__button_exchange')
 modalInitialization('.modal-output', '.dashboard__button_output')
 modalInitialization('.modal-recharge', '.dashboard__button_recharge')

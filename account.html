@@ -9,19 +9,72 @@
 <body>
 <div class="modal modal-alert">
     <div class="modal__inner">
-        <div class="alert-icon__wrapper">
-            <svg class="alert__icon">
-                <use href="./img/icons.svg#error"/>
-            </svg>
+        <h4 class="title alert__title">Ваша реферальная ссылка скопирована!</h4>
+    </div>
+</div>
+
+<div class="modal modal-invest">
+    <div class="modal__inner">
+        <h3 class="title invest__title">Ваши реффералы</h3>
+        <div class="invest__inner">
+            <table class="invest__table">
+                <thead class="invest__head">
+                <tr class="invest__row">
+                    <th class="invest__col">Имя пользователя</th>
+                    <th class="invest__col">Заработано</th>
+                </tr>
+                </thead>
+                <tbody class="invest__body">
+                <tr class="invest__row">
+                    <td class="invest__col">Igrok</td>
+                    <td class="invest__col">3₽</td>
+                </tr>
+                <tr class="invest__row">
+                    <td class="invest__col">Igrok</td>
+                    <td class="invest__col">3₽</td>
+                </tr>
+                <tr class="invest__row">
+                    <td class="invest__col">Igrok</td>
+                    <td class="invest__col">3₽</td>
+                </tr>
+                <tr class="invest__row">
+                    <td class="invest__col">Igrok</td>
+                    <td class="invest__col">3₽</td>
+                </tr>
+                <tr class="invest__row">
+                    <td class="invest__col">Igrok</td>
+                    <td class="invest__col">3₽</td>
+                </tr>
+                <tr class="invest__row">
+                    <td class="invest__col">Igrok</td>
+                    <td class="invest__col">3₽</td>
+                </tr>
+                <tr class="invest__row">
+                    <td class="invest__col">Igrok</td>
+                    <td class="invest__col">3₽</td>
+                </tr>
+                <tr class="invest__row">
+                    <td class="invest__col">Igrok</td>
+                    <td class="invest__col">3₽</td>
+                </tr>
+                <tr class="invest__row">
+                    <td class="invest__col">Igrok</td>
+                    <td class="invest__col">3₽</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-        <h3 class="title alert__title">Произошла ошибка!</h3>
-        <p class="text alert__text">Попробуйте позже</p>
     </div>
 </div>
 
 <!-- Обмен -->
 <div class="modal modal-exchange">
     <div class="modal__inner">
+        <button class="modal__close">
+            <svg class="modal-close__icon">
+                <use href="./img/icons.svg#cross"/>
+            </svg>
+        </button>
         <p class="text transactions__title">Обмен монет на рубли</p>
         <p class="text transactions__text">Стоимость одной монетки: 10₽</p>
         <form class="transactions__form">
@@ -38,6 +91,11 @@
 <!-- Вывод -->
 <div class="modal modal-output">
     <div class="modal__inner">
+        <button class="modal__close">
+            <svg class="modal-close__icon">
+                <use href="./img/icons.svg#cross"/>
+            </svg>
+        </button>
         <p class="text transactions__title">
             Введите колличество средств и способ вывода. Минимальная сумма вывода - 300₽
         </p>
@@ -59,6 +117,11 @@
 <!-- Пополнение -->
 <div class="modal modal-recharge">
     <div class="modal__inner">
+        <button class="modal__close">
+            <svg class="modal-close__icon">
+                <use href="./img/icons.svg#cross"/>
+            </svg>
+        </button>
         <p class="text transactions__title">
             Введите сумму, на которую хотите пополнить. Минимальная сумма пополнения - 300₽
         </p>
@@ -148,7 +211,10 @@
                     <p class="referral__money">Заработано: +0₽</p>
                 </div>
             </div>
-            <a class="referral__link" href="#">https://mario-cash.com?rto=tst</a>
+            <div class="referral__link">
+                <span>https://mario-cash.com?rto=tst</span>
+                <input class="referral-link__input" type="text" value="https://mario-cash.com?rto=tst">
+            </div>
         </div>
     </div>
 </section>

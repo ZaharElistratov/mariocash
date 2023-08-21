@@ -4,6 +4,78 @@ html, body {
     background: url("../img/account/background.png") no-repeat center / cover;
 }
 
+/* ALERT */
+.alert__title {
+    text-align: center;
+}
+
+/* INVEST */
+h3.invest__title {
+    font-size: 48px;
+}
+
+.invest__inner {
+    margin-top: 25px;
+
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.invest__inner::-webkit-scrollbar {
+    width: 5px;
+}
+
+.invest__inner::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: var(--color-accent);
+}
+
+.invest__inner::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: var(--color-white);
+}
+
+.invest__table {
+    width: 100%;
+
+    text-align: left;
+}
+
+.invest__col {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.invest__body .invest__col {
+    padding: 8px 0;
+
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    h3.invest__title {
+        margin: 0 auto;
+        max-width: 240px;
+
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .invest__inner {
+        margin-top: 15px;
+
+        height: 150px;
+    }
+
+    .invest__col {
+        font-size: 16px;
+    }
+
+    .invest__body .invest__col {
+        padding: 5px 0;
+    }
+}
+
 /* TRANSACTIONS */
 .transactions__title {
     font-weight: 800;
@@ -56,65 +128,6 @@ html, body {
 
     .transactions__buttons {
         gap: 10px;
-    }
-}
-
-/* ALERT */
-.modal-alert .modal__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.alert-icon__wrapper {
-    width: 128px;
-    height: 128px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 100%;
-    background: var(--color-accent-gradient);
-}
-
-.alert__icon {
-    width: 44px;
-    height: 44px;
-}
-
-h3.alert__title {
-    margin-top: 25px;
-
-    font-size: 48px;
-    text-align: center;
-}
-
-.alert__text {
-    margin-top: 50px;
-
-    text-align: center;
-}
-
-@media (max-width: 767px) {
-    .alert-icon__wrapper {
-        width: 72px;
-        height: 72px;
-    }
-
-    .alert__icon {
-        width: 24px;
-        height: 24px;
-    }
-
-    h3.alert__title {
-        font-size: 32px;
-    }
-
-    .alert__text {
-        margin-top: 25px;
-
-        font-size: 20px;
     }
 }
 
@@ -430,6 +443,8 @@ h3.alert__title {
 
     display: flex;
     gap: 30px;
+
+    cursor: pointer;
 }
 
 .referral__link {
@@ -439,6 +454,12 @@ h3.alert__title {
     text-decoration: underline;
 
     flex: 0 0 auto;
+
+    cursor: pointer;
+}
+
+.referral-link__input {
+    display: none;
 }
 
 @media (max-width: 1519px) {

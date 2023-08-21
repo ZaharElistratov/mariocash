@@ -8,6 +8,17 @@
                 fill="#310081"/>
     </symbol>
 
+    <symbol id="cross" viewBox="0 0 24 24">
+        <path d="M0 2.88L2.88 0L24 21.12L21.12 24L0 2.88Z" fill="#fff"/>
+        <path d="M0 21.12L21.12 0L24 2.88L2.88 24L0 21.12Z" fill="#fff"/>
+    </symbol>
+
+    <symbol id="arrow-bottom" viewBox="0 0 35 25">
+        <path
+                d="m18.319 23.83c-0.3981 0.5687-1.2403 0.5687-1.6384 0l-15.579-22.256c-0.46394-0.66278 0.01021-1.5735 0.81924-1.5735h31.159c0.8091 0 1.2832 0.91068 0.8193 1.5735l-15.579 22.256z"
+                fill="#2E0C66"/>
+    </symbol>
+
     <symbol id="success" viewBox="0 0 50 52">
         <path d="M3 22L21.2921 46L47 2" stroke="white" stroke-width="6"/>
     </symbol>
@@ -15,12 +26,6 @@
     <symbol id="error" viewBox="0 0 44 44">
         <path d="M0 5.28L5.28 0L44 38.72L38.72 44L0 5.28Z" fill="white"/>
         <path d="M0 38.72L38.72 0L44 5.28L5.28 44L0 38.72Z" fill="white"/>
-    </symbol>
-
-    <symbol id="arrow-bottom" viewBox="0 0 35 25">
-        <path
-                d="m18.319 23.83c-0.3981 0.5687-1.2403 0.5687-1.6384 0l-15.579-22.256c-0.46394-0.66278 0.01021-1.5735 0.81924-1.5735h31.159c0.8091 0 1.2832 0.91068 0.8193 1.5735l-15.579 22.256z"
-                fill="#2E0C66"/>
     </symbol>
 
     <symbol id="telegram" viewBox="0 0 36 36">

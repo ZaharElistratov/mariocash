@@ -276,6 +276,9 @@ h4.title {
     width: 600px;
     height: fit-content;
 
+    display: flex;
+    flex-direction: column;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -286,12 +289,42 @@ h4.title {
     background: var(--color-black);
 }
 
+.modal__close {
+    padding: 0;
+
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+    border: 0;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.modal-close__icon {
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
 @media (max-width: 767px) {
     .modal__inner {
         padding: 25px;
 
         width: calc(100% - 40px);
         max-width: 400px;
+    }
+
+    .modal__close {
+        top: 25px;
+        right: 25px;
+    }
+
+    .modal-close__icon {
+        width: 12px;
+        height: 12px;
     }
 }
 
