@@ -224,9 +224,32 @@ h3.invest__title {
     width: 100%;
     height: 100%;
 
+    position: relative;
+
+    border-radius: 15px;
+}
+
+.dashboard__img img {
+    width: 100%;
+    height: 100%;
+
     object-fit: cover;
 
     border-radius: 15px;
+}
+
+.dashboard__img::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    border-radius: 15px;
+    background: rgba(0, 0, 0, .5);
 }
 
 .dashboard__content {
@@ -440,6 +463,7 @@ h3.invest__title {
     font-weight: 600;
     font-size: 24px;
     line-height: 1em;
+    text-decoration: underline;
 
     display: flex;
     gap: 30px;

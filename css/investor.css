@@ -1,5 +1,60 @@
 @import "./global.css";
 
+/* TARIFF */
+.tariff__title {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.tariff__text {
+    margin-top: 20px;
+
+    font-size: 24px;
+}
+
+.tariff__form {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tariff__field {
+    width: 100%;
+}
+
+.tariff__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.tariff__button {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .tariff__title {
+        font-size: 14px;
+    }
+
+    .tariff__text {
+        margin-top: 10px;
+
+        font-size: 14px;
+    }
+
+    .tariff__form {
+        margin-top: 10px;
+
+        gap: 10px;
+    }
+
+    .tariff__buttons {
+        gap: 10px;
+    }
+}
+
 /* HEADER */
 .header {
     padding: 45px 0;

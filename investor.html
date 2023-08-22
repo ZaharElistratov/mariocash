@@ -7,6 +7,47 @@
     <title>Кабинет инвестора - Mario Cash</title>
 </head>
 <body>
+<!-- Начальный тариф -->
+<div class="modal modal-tariff modal-beginning-tariff">
+    <div class="modal__inner">
+        <button class="modal__close">
+            <svg class="modal-close__icon">
+                <use href="./img/icons.svg#cross"/>
+            </svg>
+        </button>
+        <p class="text tariff__title">Инвестиция</p>
+        <p class="text tariff__text">Введите счет для инвестирования (от 300 до 1000)</p>
+        <form class="tariff__form">
+            <label>
+                <input class="field tariff__field" type="number" name="quantity" placeholder="Сумма">
+            </label>
+            <div class="tariff__buttons">
+                <button class="button button_medium tariff__button">Инвестировать</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Продвинутый тариф -->
+<div class="modal modal-tariff modal-advanced-tariff">
+    <div class="modal__inner">
+        <button class="modal__close">
+            <svg class="modal-close__icon">
+                <use href="./img/icons.svg#cross"/>
+            </svg>
+        </button>
+        <p class="text tariff__title">Инвестиция</p>
+        <p class="text tariff__text">Введите счет для инвестирования (от 300 до 1000)</p>
+        <form class="tariff__form">
+            <label>
+                <input class="field tariff__field" type="number" name="quantity" placeholder="Сумма">
+            </label>
+            <div class="tariff__buttons">
+                <button class="button button_medium tariff__button">Инвестировать</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 <header class="header">
     <div class="container">
@@ -62,7 +103,7 @@
                         Краткое описание тарифа и много интереснего...
                     </p>
                 </div>
-                <button class="button button_large tariffs__button">инвестировать</button>
+                <button class="button button_large tariffs__button tariffs__button_beginning">инвестировать</button>
             </div>
             <div class="tariffs__table">
                 <div class="tariffs__head">
@@ -79,7 +120,7 @@
                         Краткое описание тарифа и много интереснего...
                     </p>
                 </div>
-                <button class="button button_large tariffs__button">инвестировать</button>
+                <button class="button button_large tariffs__button tariffs__button_advanced">инвестировать</button>
             </div>
         </div>
     </div>
@@ -127,5 +168,8 @@
         </a>
     </div>
 </section>
+
+<script src="./js/modal.js"></script>
+<script src="./js/investor.js"></script>
 </body>
 </html>
